@@ -6,8 +6,8 @@ I compare the performances of the CPU clahe algorithm () and my GPU adapted one 
 To test the kernel with your own data, download the notebook and kernel, and add **8-bit** 3D stacks named "*raw.tif" to the /Images folder.
 
 ### Notes
-Existing CPU implementations for image analysis: 
-- ImageJ: https://imagej.net/plugins/clahe
-- Python: skimage.exposure.equalize_adapthist
-Mac Metal GPU implementation: https://github.com/YuAo/Accelerated-CLAHE
+Existing implementations for image analysis: 
+- ImageJ (CPU): https://imagej.net/plugins/clahe
+- Python (CPU): skimage.exposure.equalize_adapthist
+- Mac Metal (GPU): https://github.com/YuAo/Accelerated-CLAHE
 Most of the pyopencl kernel was generated with chatGPT then manually corrected.
